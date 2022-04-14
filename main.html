@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do lista</title>
+    <script src="https://kit.fontawesome.com/539b204ede.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="todo">
+        <div class="header">
+            <h1>To do list</h1>
+            <input class="inputTask" type="text" placeholder="Wpisz treść zadania...">
+            <button class="addTask">ADD</button>
+            <span class="emptyTask">Wpisz treść zadania!</span>
+        </div>
+
+        <div class="todolist">
+            <h3>Lista zadań:</h3>
+            <p class="errorInfo">Brak zadań na liście..</p>
+            <ul id="ul" class="ulList">
+                
+            </ul>
+        </div>
+
+        <div class="editor">
+            <p class="emptyEdit">Musisz podać jakąś wartość!</p>
+            <input class="valueEditor" type="text">
+            <button class="valueAccept">ACCEPT</button>
+            <button class="valueDecline">DECLINE</button>
+        </div>
+    </div>
+
+
+<script src="/main.js"></script>
+</body>
+
+</html>
