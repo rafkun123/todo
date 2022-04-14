@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 194, 194);
+    
+    .todo{
+        width: 600px;
+        background-color: rgba(242, 239, 239, 0.208);
+        margin-top: 100px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 4px 4px 5px rgba(82, 82, 82, .4);
+
+        .header{
+            padding: 10px;
+            height: 120px;
+            background-color: rgba(29, 203, 87, 0.796);
+            border-radius: 8px 8px 0px 0px;
+            box-shadow: 4px 4px 5px rgba(82, 82, 82, .4);
+
+            h1{
+                margin: 5px 0px 15px 0px;
+                text-transform: uppercase;
+            }
+            
+            .inputTask{
+                width: 80%;
+                height: 18px;
+                padding: 2px 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+
+            .addTask{
+                width: 10%;
+                height: 26px;
+                padding: 2px 10px;
+                box-shadow: 4px 4px 5px rgba(82, 82, 82, .4);
+                cursor: pointer;
+                background-color: #fff;
+                border-radius: 5px;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+
+            }
+
+            .emptyTask{
+                display: none;
+                font-size: 20px;
+                font-weight: 700;
+                color: rgb(233, 40, 40);
+            }
+
+        }
+
+        .todolist{
+
+            h3{
+                text-transform: uppercase;
+                margin-top: 10px;
+                padding-top: 10px;
+            }
+
+            .errorInfo{
+                // display: none;
+                font-size: 20px;
+                font-weight: bolder;
+                color: rgb(233, 40, 40);
+                text-decoration: underline;
+            }
+
+            ul{
+                padding: 0;
+
+                .lineThrough{
+                    text-decoration: line-through;
+                    color: rgba(0, 0, 0, 0.244);
+                    font-size: 15px;
+                }
+
+                li{
+                    display: flex;
+                    list-style: none;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 10px;
+                    padding-left: 12px;
+                    border-radius: 5px;
+                    background-color: #fff;
+
+                
+                    div{
+                        margin-right: 10px;
+
+                        button{
+                            margin: 5px;
+                            width: 35px;
+                            height: 25px;
+                            cursor: pointer;
+
+                            .fa-check{
+                                color: green;
+                            }
+
+                            .fa-pen-to-square{
+                                color: rgb(46, 97, 250);
+                            }
+
+                            .fa-xmark{
+                                color: red;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .editor{
+            display: none;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 50px;
+            width: 600px;
+            background-color: red;
+            border: 1px solid black;
+            box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.5);
+
+            .valueEditor{
+                display: flex;
+                border-radius: 10px;
+                width: 90%;
+                margin: 10px auto;
+                padding: 2px 5px;
+            }
+
+            button{
+                display: inline-block;
+                border-radius: 5px;
+                border: 1px solid black;
+                box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.5);
+                margin: 0px 50px 10px;
+                width: 30%;
+                cursor: pointer;
+                background-color: rgb(255, 255, 255);
+                color: black;
+                font-weight: bold;
+
+            }
+
+            .emptyEdit{
+                display: none;
+                font-size: 20px;
+                font-weight: bolder;
+                color: rgba(255, 250, 0, 0.9);
+            }
+        }
+    }
+
+}
