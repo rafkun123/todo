@@ -104,14 +104,17 @@ body{
 
                             .fa-check{
                                 color: green;
+                                pointer-events: none;
                             }
 
                             .fa-pen-to-square{
                                 color: rgb(46, 97, 250);
+                                pointer-events: none;
                             }
 
                             .fa-xmark{
                                 color: red;
+                                pointer-events: none;
                             }
 
                         }

@@ -12,6 +12,7 @@ const editor = document.querySelector('.editor')
 const liList = document.querySelectorAll('li')
 const errorInfo = document.querySelector('.errorInfo')
 const emptyEdit = document.querySelector('.emptyEdit')
+const iconAccept = document.querySelector('fa-check')
 let editedTodo
 
 const btnService = (e) => {
@@ -19,9 +20,10 @@ const btnService = (e) => {
     if (e.target.matches('.accept')){
         e.target.closest('li').classList.toggle('lineThrough');
         editor.style.display = "none"
+    } 
 
     // edit button into task value
-    } else if (e.target.matches('.edit')){
+     else if (e.target.matches('.edit')){
         editor.style.display = 'block'
         // console.log(e.target.closest('li').textContent);
         valueEditor.value = e.target.closest('li').textContent
@@ -36,7 +38,6 @@ const btnService = (e) => {
         } else{
             errorInfo.style.display = 'none'
         }
-
     }
 }
 
@@ -85,8 +86,9 @@ const addingTask = () => {
         newBtn3.classList.add('delete')
 
         // adding icons to buttons
-        newBtn1.append(iconAccept)
-        newBtn1.firstChild.classList.add('fa-solid', 'fa-check')
+        newBtn1.innerHTML = "<i class='fa-solid fa-check'></i>"
+        // newBtn1.append(iconAccept)
+        // newBtn1.firstChild.classList.add('fa-solid', 'fa-check')
 
         newBtn2.append(iconEdit)
         newBtn2.firstChild.classList.add('fa-solid', 'fa-pen-to-square')
