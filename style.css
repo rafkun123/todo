@@ -118,14 +118,17 @@ body .todo .todolist ul li div button {
 
 body .todo .todolist ul li div button .fa-check {
   color: green;
+  pointer-events: none;
 }
 
 body .todo .todolist ul li div button .fa-pen-to-square {
   color: #2e61fa;
+  pointer-events: none;
 }
 
 body .todo .todolist ul li div button .fa-xmark {
   color: red;
+  pointer-events: none;
 }
 
 body .todo .editor {
